@@ -1,3 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
+}
+
+.nav-bar{
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 10vh;
+    gap:100px;
+}
+
+/*Logo do FigureVerse*/
+.logo{
+    display: flex;
+    margin-left: 10px;
+}
+.a{
+    color: white;
+}
+.b{
+    color: orange;
+}
+
+.icons img{
+    border-radius: 10px;
+
+    width: 10vw;
+    height: 10vh;
+
 }

@@ -36,12 +36,6 @@ body{
     height: 10vh;
 
 }
-
-.lupa.avif{
-    width: 10vw;
-    height: 10vh;
-
-}
 .galeria{
     display: flex;
     justify-content: center;
@@ -51,14 +45,67 @@ body{
 
 }
 
-.card{
-    background-color: rgba(250, 235, 215, 0.815);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.lupa{
+    width: 50px;
+    height: 10vh;
 }
 
 .info{
     background-color: antiquewhite;
     padding: 10px;
+}
+.card {
+    background-color: rgba(250, 235, 215, 0.815);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 180px;
+}
+
+.card img {
+    width: 150px;
+    height: 180px;
+    object-fit: contain;
+}
+.botaodepesquisa {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.botaodepesquisa img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.campodepesquisa {
+    display: none;
+
+    width: 200px;
+    height: 40px;
+
+    padding: 0 15px;
+
+    background-color: white;
+    color: black;
+
+    border: 2px solid orange;
+    border-radius: 10px;
+
+    outline: none;
+
+    font-size: 16px;
+}
+
+
+.campodepesquisa.aberto {
+    display: block;
+}
+
+
+.campodepesquisa::placeholder {
+    color: white
 }

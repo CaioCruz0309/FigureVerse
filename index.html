@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+<script src="script.js"></script>
 <body>
     <header class="nav-bar">
         <div class="logo">
@@ -14,7 +15,19 @@
         </div>
 
         <div class="icons">
-            <img src="imagens/lupa.avif" style="width: 115px; height: auto;">
+           <button class="botaodepesquisa" onclick="abrirPesquisa()">
+                <img class="lupa" src="imagens/lupa.avif" alt="Pesquisar">
+            </button>
+
+            
+            <input
+                type="text"
+                id="campodepesquisa"
+                class="campodepesquisa"
+                placeholder="Pesquisar bonecos..."
+                onkeyup="pesquisar()"
+            >
+
         
         
             <img src="imagens/carro.avif">
@@ -26,7 +39,7 @@
     <section class="galeria">
         <div class="card">
             
-            <img src="zoro.avif" style="width: 115px; height: auto;">
+            <img src="zoro.avif">
             
             <div class="info">
                 <h2>Zoro ActionFigure</h2>
@@ -36,20 +49,41 @@
 
         <div class="card">
             
-            <img src="zoro.avif" style="width: 115px; height: auto;">
-            
+            <img src="charizard.avif">
+        <div class="info">
+
+            <h2>MEGA Charizard X</h2>
+            <h4>R$ 89,00</h4>
+        </div>    
         </div>
 
         <div class="card">
             
-            <img src="zoro.avif" style="width: 115px; height: auto;">
-            
+            <img src="luffy.avif">
+            <div class="info">
+                <h2>Monkey D.Luffy</h2>
+                <h4>R$ 59,90</h4>
+            </div>
         </div>
 
         <div class="card">
             
-            <img src="zoro.avif" style="width: 115px; height: auto;">
-            
+            <img src="goku.avif">
+            <div class="info">
+                <h2>Son Goku SSGSS</h2>
+                <h4>R$ 97,90</h4>
+
+
+
+
+
+
+
+
+
+
+       
+        </div>
         </div>
     </section>
 </body>

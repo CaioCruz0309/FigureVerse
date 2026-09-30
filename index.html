@@ -15,25 +15,29 @@
         </div>
 
         <div class="icons">
-           <button class="botaodepesquisa" onclick="abrirPesquisa()">
-                <img class="lupa" src="imagens/lupa.avif" alt="Pesquisar">
-            </button>
+   
+    <button 
+        type="button" 
+        id="btnpesquisa" 
+        class="botaodepesquisa" 
+        onclick="abrirPesquisa()"
+        aria-label="Pesquisar"
+    >
+        <img class="lupa" src="imagens/lupa.avif" alt="Lupa" style="width: 100px; height: auto;">
+    </button>
 
-            
-            <input
-                type="text"
-                id="campodepesquisa"
-                class="campodepesquisa"
-                placeholder="Pesquisar bonecos..."
-                onkeyup="pesquisar()"
-            >
-
+    
+    <input
+        type="text"
+        id="campodepesquisa"
+        class="campodepesquisa"
+        placeholder="Pesquisar bonecos..."
+        oninput="pesquisar()"
+    >   
+            <img src="imagens/carro.avif" style="width: 62px; height: auto;">
         
         
-            <img src="imagens/carro.avif">
-        
-        
-            <img src="imagens/filtro.avif" style="width: 62px; height: auto;">
+            <img src="imagens/filtro.avif" style="width: 55px; height: auto;">
         </div>
     </header>
     <section class="galeria">
@@ -43,9 +47,12 @@
             
             <div class="info">
                 <h2>Zoro ActionFigure</h2>
-                <h4>R$ 67,42</h4>
+                <div class="preco-linha">
+                <h4>R$ 67,42 </h4>
+                 <button class="btn-add">Add</button>
             </div>
         </div>
+    </div>
 
         <div class="card">
             
@@ -53,36 +60,73 @@
         <div class="info">
 
             <h2>MEGA Charizard X</h2>
+            <div CLASS="preco-linha">
             <h4>R$ 89,00</h4>
+            <button CLASS="btn-add">Add</button>
         </div>    
         </div>
-
+        </div>
         <div class="card">
             
             <img src="luffy.avif">
             <div class="info">
                 <h2>Monkey D.Luffy</h2>
+                 <div CLASS="preco-linha">
                 <h4>R$ 59,90</h4>
+                <button CLASS="btn-add">Add</button>
             </div>
         </div>
-
+</div>
         <div class="card">
             
             <img src="goku.avif">
             <div class="info">
                 <h2>Son Goku SSGSS</h2>
+                 <div CLASS="preco-linha">
                 <h4>R$ 97,90</h4>
+<button CLASS="btn-add">Add</button>
+
+    </div>
+        </div>
+        </div>
+
+
+        <div class="card"> 
+            
+        <img src="sasuke.avif">
+            <div class="info">
+                <h2>Sasuke Uchiha</h2>
+                 <div CLASS="preco-linha">
+                <h4>R$ 79,90</h4>
+                <button CLASS="btn-add">Add</button>
+                 </div>
+</div>
+</div>
+
+ <div class="card"> 
+            
+        <img src="tanjiro.avif">
+            <div class="info">
+                <h2>Tanjiro Kamado</h2>
+                 <div CLASS="preco-linha">
+                <h4>R$ 62,90</h4>
+                <button CLASS="btn-add">Add</button>
+</div>
+</div>
+</div>
+<div class="card"> 
+            
+        <img src="gojo.avif">
+            <div class="info">
+                <h2>Satoru Gojo</h2>
+                 <div CLASS="preco-linha">
+                <h4>R$ 109,90</h4>
+                <button CLASS="btn-add">Add</button>
 
 
 
 
-
-
-
-
-
-
-       
+       </div>
         </div>
         </div>
     </section>

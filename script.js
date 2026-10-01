@@ -39,15 +39,10 @@ cards.forEach(function(card) {
 
 }
 
-// ======================================================
-// CARRINHO
-// ======================================================
 
 let carrinho = [];
 
-// ======================================================
-// ELEMENTOS DO CARRINHO
-// ======================================================
+
 
 const btnCarrinho =
 document.getElementById("btnCarrinho");
@@ -70,9 +65,6 @@ document.getElementById("totalCarrinho");
 const contadorCarrinho =
 document.getElementById("contadorCarrinho");
 
-// ======================================================
-// ABRIR CARRINHO
-// ======================================================
 
 if (btnCarrinho) {
 
@@ -91,9 +83,6 @@ btnCarrinho.addEventListener("click", function() {
 
 }
 
-// ======================================================
-// FECHAR CARRINHO
-// ======================================================
 
 function fecharCarrinhoFuncao() {
 
@@ -128,24 +117,15 @@ fundoCarrinho.addEventListener(
 
 }
 
-// ======================================================
-// ADICIONAR PRODUTO
-// ======================================================
 
 function adicionarProduto(nome, preco, imagem) {
 
-// Converte o preço para número
+
 preco = Number(preco);
 
-// Procura se o produto já existe
 const produtoExistente = carrinho.find(
     produto => produto.nome === nome
 );
-
-
-// ==================================================
-// PRODUTO JÁ EXISTE
-// ==================================================
 
 if (produtoExistente) {
 
@@ -154,9 +134,7 @@ if (produtoExistente) {
 }
 
 
-// ==================================================
-// NOVO PRODUTO
-// ==================================================
+
 
 else {
 
@@ -175,11 +153,10 @@ else {
 }
 
 
-// Atualiza o carrinho
+
 atualizarCarrinho();
 
 
-// Abre o carrinho automaticamente
 
 if (carrinhoElement) {
     carrinhoElement.classList.add("aberto");
@@ -192,9 +169,6 @@ if (fundoCarrinho) {
 
 }
 
-// ======================================================
-// AUMENTAR QUANTIDADE
-// ======================================================
 
 function aumentarQuantidade(nome) {
 
@@ -216,10 +190,6 @@ atualizarCarrinho();
 
 }
 
-// ======================================================
-// DIMINUIR QUANTIDADE
-// ======================================================
-
 function diminuirQuantidade(nome) {
 
 const produto = carrinho.find(
@@ -235,7 +205,6 @@ if (!produto) {
 produto.quantidade--;
 
 
-// Se chegar a zero, remove o produto
 
 if (produto.quantidade <= 0) {
 
@@ -251,9 +220,6 @@ atualizarCarrinho();
 
 }
 
-// ======================================================
-// REMOVER PRODUTO
-// ======================================================
 
 function removerProduto(nome) {
 
@@ -267,13 +233,10 @@ atualizarCarrinho();
 
 }
 
-// ======================================================
-// ATUALIZAR CARRINHO
-// ======================================================
 
 function atualizarCarrinho() {
 
-// Verifica se a lista existe
+
 
 if (!listaCarrinho) {
 
@@ -286,14 +249,10 @@ if (!listaCarrinho) {
 }
 
 
-// Limpa a lista
+
 
 listaCarrinho.innerHTML = "";
 
-
-// ==================================================
-// CARRINHO VAZIO
-// ==================================================
 
 if (carrinho.length === 0) {
 
@@ -315,10 +274,6 @@ if (carrinho.length === 0) {
 
 }
 
-
-// ==================================================
-// CARRINHO COM PRODUTOS
-// ==================================================
 
 else {
 
@@ -415,9 +370,6 @@ atualizarContador();
 
 }
 
-// ======================================================
-// ATUALIZAR TOTAL
-// ======================================================
 
 function atualizarTotal() {
 
@@ -446,9 +398,6 @@ if (totalCarrinho) {
 
 }
 
-// ======================================================
-// ATUALIZAR CONTADOR
-// ======================================================
 
 function atualizarContador() {
 
@@ -473,9 +422,6 @@ if (contadorCarrinho) {
 
 }
 
-// ======================================================
-// INICIALIZAÇÃO
-// ======================================================
 
 document.addEventListener(
 "DOMContentLoaded",

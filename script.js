@@ -43,7 +43,6 @@ cards.forEach(function(card) {
 let carrinho = [];
 
 
-
 const btnCarrinho =
 document.getElementById("btnCarrinho");
 
@@ -64,7 +63,6 @@ document.getElementById("totalCarrinho");
 
 const contadorCarrinho =
 document.getElementById("contadorCarrinho");
-
 
 if (btnCarrinho) {
 
@@ -120,7 +118,6 @@ fundoCarrinho.addEventListener(
 
 function adicionarProduto(nome, preco, imagem) {
 
-
 preco = Number(preco);
 
 const produtoExistente = carrinho.find(
@@ -132,7 +129,6 @@ if (produtoExistente) {
     produtoExistente.quantidade++;
 
 }
-
 
 
 
@@ -151,7 +147,6 @@ else {
     });
 
 }
-
 
 
 atualizarCarrinho();
@@ -234,6 +229,7 @@ atualizarCarrinho();
 }
 
 
+
 function atualizarCarrinho() {
 
 
@@ -255,24 +251,16 @@ listaCarrinho.innerHTML = "";
 
 
 if (carrinho.length === 0) {
-
     listaCarrinho.innerHTML = `
-
         <div class="carrinho-vazio">
-
-            <p>
-                Seu carrinho está vazio.
-            </p>
-
-            <p>
-                Adicione algum produto.
-            </p>
-
-        </div>
+            <p>Seu carrinho está vazio.</p>
+            <p>Adicione alguma action figure.</p>
+</div>
 
     `;
 
 }
+
 
 
 else {
@@ -358,12 +346,10 @@ else {
 }
 
 
-// Atualiza o total
 
 atualizarTotal();
 
 
-// Atualiza o contador
 
 atualizarContador();
 

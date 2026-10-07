@@ -104,10 +104,12 @@ body {
     width: 180px;
     border-radius: 8px;
     overflow: hidden;
+
+    margin-bottom: 6vh;
 }
 
 .card img {
-    width: 150px;
+    width: 100%;
     height: 180px;
     object-fit: contain;
     margin-top: 10px;
@@ -191,11 +193,6 @@ body {
     font-weight: bold;
 }
 
-
-/* =========================
-   FUNDO ESCURO
-========================= */
-
 #fundoCarrinho {
     position: fixed;
     inset: 0;
@@ -215,10 +212,6 @@ body {
     visibility: visible;
 }
 
-
-/* =========================
-   CARRINHO
-========================= */
 
 #carrinho {
     position: fixed;
@@ -248,9 +241,6 @@ body {
 }
 
 
-/* =========================
-   CABEÇALHO
-========================= */
 
 .cabecalho-carrinho {
     display: flex;
@@ -282,10 +272,6 @@ body {
 }
 
 
-/* =========================
-   LISTA
-========================= */
-
 #listaCarrinho {
     flex: 1;
 
@@ -294,10 +280,6 @@ body {
     padding: 15px;
 }
 
-
-/* =========================
-   ITEM DO CARRINHO
-========================= */
 
 .item-carrinho {
     display: flex;
@@ -339,10 +321,6 @@ body {
 }
 
 
-/* =========================
-   QUANTIDADE
-========================= */
-
 .quantidade {
     display: flex;
 
@@ -378,11 +356,6 @@ body {
     text-align: center;
 }
 
-
-/* =========================
-   REMOVER
-========================= */
-
 .remover {
     margin-top: 8px;
 
@@ -398,9 +371,6 @@ body {
 }
 
 
-/* =========================
-   RODAPÉ
-========================= */
 
 .rodape-carrinho {
     padding: 20px;
@@ -445,9 +415,6 @@ body {
 }
 
 
-/* =========================
-   CARRINHO VAZIO
-========================= */
 
 .carrinho-vazio {
     text-align: center;

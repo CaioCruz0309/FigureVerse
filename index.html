@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>FigureVerse</title>
 </head>
 
 <body>
@@ -41,7 +41,33 @@
 
         
         
-            <img src="imagens/filtro.avif" style="width: 55px; height: auto;">
+            
+<div class="filtro-container">
+    <button
+        type="button"
+        id="btnFiltro"
+        class="btn-filtro"
+        onclick="abrirFiltro()"
+        aria-label="Abrir filtros"
+    >
+        <img src="imagens/filtro.avif" alt="Filtro" style="width: 55px; height: auto;">
+    </button>
+
+    <select
+        id="filtroPreco"
+        class="filtro-preco"
+        onchange="filtrarProdutos()"
+        aria-label="Filtrar produtos por preço"
+    >
+        <option value="padrao">Ordem original</option>
+        <option value="menor">Menor preço</option>
+        <option value="maior">Maior preço</option>
+        <option value="ate50">Até R$ 50,00</option>
+        <option value="50a100">R$ 50,00 a R$ 100,00</option>
+        <option value="acima100">Acima de R$ 100,00</option>
+    </select>
+</div>
+
         </div>
     </header>
     <section class="galeria">
@@ -233,10 +259,10 @@
             <div class="info">
                 <h2>Killua Zoldyck</h2>
                  <div class="preco-linha">
-                <h4>R$ 69,90</h4>
+                <h4>R$ 74,90</h4>
                 <button class="btn-add" onclick="adicionarProduto(
                         'Killua Zoldyck',
-                        69.90,
+                        74.90,
                         'killua.avif'
                     )"
                 >
@@ -421,10 +447,10 @@
             <div class="info">
                 <h2>Nezuko Kamado</h2>
                  <div class="preco-linha">
-                <h4>R$ 69,90</h4>
+                <h4>R$ 59,90</h4>
                 <button class="btn-add" onclick="adicionarProduto(
                         'Nezuko Kamado',
-                        69.90,
+                        59.90,
                         'nzk.avif'
                     )"
                 >
@@ -587,28 +613,227 @@
                  </div> 
             </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<div class="card"> 
+          <img src="uzui.avif" alt="Tengen Uzui">
+            <div class="info">
+                <h2>Tengen Uzui</h2>
+                 <div class="preco-linha">
+                <h4>R$ 74,90</h4>
+                <button class="btn-add" onclick="adicionarProduto(
+                        'Tengen Uzui',
+                        74.90,
+                        'uzui.avif'
+                    )"
+                >
+                    Add
+                </button>  
+                 </div> 
+            </div>
+</div>
+<div class="card"> 
+          <img src="kakashi.avif" alt="Kakashi Hatake">
+            <div class="info">
+                <h2>Kakashi Hatake</h2>
+                 <div class="preco-linha">
+                <h4>R$ 49,90</h4>
+                <button class="btn-add" onclick="adicionarProduto(
+                        'Kakashi Hatake',
+                        49.90,
+                        'kakashi.avif'
+                    )"
+                >
+                    Add
+                </button>  
+                 </div> 
+            </div>
+</div>
+<div class="card"> 
+          <img src="itadori.avif" alt="Yuji Itadori">
+            <div class="info">
+                <h2>Yuji Itadori</h2>
+                 <div class="preco-linha">
+                <h4>R$ 19,90</h4>
+                <button class="btn-add" onclick="adicionarProduto(
+                        'Yuji Itadori',
+                        19.90,
+                        'itadori.avif'
+                    )"
+                >
+                    Add
+                </button>  
+                 </div> 
+            </div>
+</div>
+<div class="card"> 
+          <img src="naruto.avif" alt="Naruto Uzumaki">
+            <div class="info">
+                <h2>Naruto Uzumaki</h2>
+                 <div class="preco-linha">
+                <h4>R$ 79,90</h4>
+                <button class="btn-add" onclick="adicionarProduto(
+                        'Naruto Uzumaki',
+                        79.90,
+                        'naruto.avif'
+                    )"
+                >
+                    Add
+                </button>  
+                 </div> 
+            </div>
+</div>
+<div class="card"> 
+          <img src="tsk.avif" alt="Tsukasa Shishio">
+            <div class="info">
+                <h2>Tsukasa Shishio</h2>
+                 <div class="preco-linha">
+                <h4>R$ 79,90</h4>
+                <button class="btn-add" onclick="adicionarProduto(
+                        'Tsukasa Shishio',
+                        79.90,
+                        'tsk.avif'
+                    )"
+                >
+                    Add
+                </button>  
+                 </div> 
+            </div>
+</div>
+<div class="card"> 
+          <img src="momo.avif" alt="Momo Ayase">
+            <div class="info">
+                <h2>Momo Ayase</h2>
+                 <div class="preco-linha">
+                <h4>R$ 89,90</h4>
+                <button class="btn-add" onclick="adicionarProduto(
+                        'Momo Ayase',
+                        89.90,
+                        'momo.avif'
+                    )"
+                >
+                    Add
+                </button>  
+                 </div> 
+            </div>
+</div>
+<div class="card"> 
+          <img src="genos.avif" alt="Genos">
+            <div class="info">
+                <h2>Genos</h2>
+                 <div class="preco-linha">
+                <h4>R$ 79,90</h4>
+                <button class="btn-add" onclick="adicionarProduto(
+                        'Genos',
+                        79.90,
+                        'genos.avif'
+                    )"
+                >
+                    Add
+                </button>  
+                 </div> 
+            </div>
+</div>
+<div class="card"> 
+          <img src="sanji.avif" alt="Vinsmoke Sanji">
+            <div class="info">
+                <h2>Vinsmoke Sanji</h2>
+                 <div class="preco-linha">
+                <h4>R$ 79,90</h4>
+                <button class="btn-add" onclick="adicionarProduto(
+                        'Vinsmoke Sanji',
+                        79.90,
+                        'sanji.avif'
+                    )"
+                >
+                    Add
+                </button>  
+                 </div> 
+            </div>
+</div>
+<div class="card"> 
+          <img src="the.avif" alt="Meliodas - O pecado da ira">
+            <div class="info">
+                <h2>Meliodas - O pecado da ira</h2>
+                 <div class="preco-linha">
+                <h4>R$ 59,90</h4>
+                <button class="btn-add" onclick="adicionarProduto(
+                        'Meliodas - O pecado da ira',
+                        59.90,
+                        'the.avif'
+                    )"
+                >
+                    Add
+                </button>  
+                 </div> 
+            </div>
+</div>
+<div class="card"> 
+          <img src="n.avif" alt="Jiraiya e Naruto">
+            <div class="info">
+                <h2>Jiraiya e Naruto</h2>
+                 <div class="preco-linha">
+                <h4>R$ 89,90</h4>
+                <button class="btn-add" onclick="adicionarProduto(
+                        'Jiraiya e Naruto',
+                        89.90,
+                        'n.avif'
+                    )"
+                >
+                    Add
+                </button>  
+                 </div> 
+            </div>
+</div>
+<div class="card"> 
+          <img src="d.avif" alt="Draken">
+            <div class="info">
+                <h2>Draken</h2>
+                 <div class="preco-linha">
+                <h4>R$ 59,90</h4>
+                <button class="btn-add" onclick="adicionarProduto(
+                        'Draken',
+                        59.90,
+                        'd.avif'
+                    )"
+                >
+                    Add
+                </button>  
+                 </div> 
+            </div>
+</div>
+<div class="card"> 
+          <img src="gon.avif" alt="Gon Freecss">
+            <div class="info">
+                <h2>Gon Freecss</h2>
+                 <div class="preco-linha">
+                <h4>R$ 79,90</h4>
+                <button class="btn-add" onclick="adicionarProduto(
+                        'Gon Freecss',
+                        79.90,
+                        'gon.avif'
+                    )"
+                >
+                    Add
+                </button>  
+                 </div> 
+            </div>
+</div>
+<div class="card"> 
+          <img src="anya.avif" alt="Anya Forger">
+            <div class="info">
+                <h2>Anya Forger</h2>
+                 <div class="preco-linha">
+                <h4>R$ 74,90</h4>
+                <button class="btn-add" onclick="adicionarProduto(
+                        'Anya Forger',
+                        74.90,
+                        'anya.avif'
+                    )"
+                >
+                    Add
+                </button>  
+                 </div> 
+            </div>
+</div>
     </section>
 <div id="fundoCarrinho"></div>
 <aside id="carrinho">
@@ -635,6 +860,228 @@
     </div>
 
 </aside>
+
+<section id="telaCheckout" class="tela-checkout">
+    <div class="checkout-container">
+
+        <div class="checkout-topo">
+            <h2><span>Figure</span>Verse</h2>
+            <button type="button" id="voltarCarrinho">
+                ← Voltar
+            </button>
+        </div>
+
+        <h1>Finalizar compra</h1>
+        <p class="checkout-subtitulo">
+            Informe seus dados para concluir seu pedido.
+        </p>
+
+        <form id="formCheckout">
+
+            <section class="checkout-secao">
+                <h2>Endereço de entrega</h2>
+
+                <label for="nomeComprador">Nome completo</label>
+                <input
+                    id="nomeComprador"
+                    name="nome"
+                    type="text"
+                    autocomplete="name"
+                    placeholder="Seu nome completo"
+                    required
+                >
+
+                <label for="emailComprador">E-mail</label>
+                <input
+                    id="emailComprador"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    placeholder="latrelogostoso@gmail.com"
+                    required
+                >
+
+                <div class="checkout-linha">
+                    <div>
+                        <label for="cep">CEP</label>
+                        <input
+                            id="cep"
+                            name="cep"
+                            autocomplete="postal-code"
+                            placeholder="00000-000"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label for="numeroEndereco">Número</label>
+                        <input
+                            id="numeroEndereco"
+                            name="numero"
+                            autocomplete="address-line2"
+                            placeholder="Nº"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <label for="rua">Rua / Avenida</label>
+                <input
+                    id="rua"
+                    name="rua"
+                    autocomplete="address-line1"
+                    placeholder="Nome da rua"
+                    required
+                >
+
+                <label for="complemento">Complemento (opcional)</label>
+                <input
+                    id="complemento"
+                    name="complemento"
+                    placeholder="Apartamento, bloco..."
+                >
+
+                <div class="checkout-linha">
+                    <div>
+                        <label for="cidade">Cidade</label>
+                        <input
+                            id="cidade"
+                            name="cidade"
+                            autocomplete="address-level2"
+                            placeholder="Sua cidade"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label for="estado">Estado (UF)</label>
+                        <input
+                            id="estado"
+                            name="estado"
+                            maxlength="2"
+                            autocomplete="address-level1"
+                            placeholder="BA"
+                            required
+                        >
+                    </div>
+                </div>
+            </section>
+
+            <section class="checkout-secao">
+                <h2>Forma de pagamento</h2>
+
+<!-- Área de cupom de desconto -->
+<section class="checkout-secao">
+    <h2>Cupom de desconto</h2>
+
+    <div class="cupom-linha">
+        <input
+            type="text"
+            id="campoCupom"
+            placeholder="Digite seu cupom"
+            autocomplete="off"
+        >
+
+        <button type="button" id="btnAplicarCupom">
+            Aplicar
+        </button>
+    </div>
+
+    <p id="mensagemCupom" role="status"></p>
+
+    <button
+        type="button"
+        id="btnRemoverCupom"
+        class="btn-remover-cupom"
+        hidden
+    >
+        Remover cupom
+    </button>
+</section>
+
+                <label class="opcao-pagamento">
+                    <input
+                        type="radio"
+                        name="pagamento"
+                        value="Pix"
+                        required
+                    >
+                    <span>💠 Pix</span>
+                </label>
+
+                <label class="opcao-pagamento">
+                    <input
+                        type="radio"
+                        name="pagamento"
+                        value="Cartão de crédito"
+                    >
+                    <span>💳 Cartão de crédito</span>
+                </label>
+
+                <label class="opcao-pagamento">
+                    <input
+                        type="radio"
+                        name="pagamento"
+                        value="Boleto"
+                    >
+                    <span>💳 Cartão de débito</span>
+                </label>
+            </section>
+
+            <section class="checkout-secao resumo-pedido">
+                <h2>Resumo do pedido</h2>
+
+<div id="resumoProdutos"></div>
+
+<div class="resumo-total">
+    <span>Subtotal</span>
+    <strong id="subtotalCheckout">R$ 0,00</strong>
+</div>
+
+<div class="resumo-total linha-desconto">
+    <span>Desconto</span>
+    <strong id="descontoCheckout">- R$ 0,00</strong>
+</div>
+
+<div class="resumo-total total-final">
+    <span>Total da compra</span>
+    <strong id="totalCheckout">R$ 0,00</strong>
+</div>
+
+                <div id="resumoProdutos"></div>
+
+                <div class="resumo-total">
+                    <span>Total da compra</span>
+                    <strong id="totalCheckout">R$ 0,00</strong>
+                </div>
+            </section>
+
+            <button type="submit" class="btn-confirmar">
+                Confirmar compra
+            </button>
+
+        </form>
+    </div>
+</section>
+<section id="telaSucesso" class="tela-sucesso">
+    <div class="sucesso-conteudo">
+        <div class="icone-sucesso">✓</div>
+
+        <h1>Compra efetuada com sucesso!</h1>
+        <p>
+            Obrigado por comprar na FigureVerse.
+            (´▽`ʃ♡ƪ)
+        </p>
+
+        <p class="mensagem-retorno">
+            Clique aqui para ser redirecionado à tela inicial.
+        </p>
+<h2>🠗</h2>
+        <button type="button" id="voltarInicio">
+            Voltar à loja
+        </button>
+    </div>
+</section>
 
 <script src="script.js"></script>
 
